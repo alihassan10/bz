@@ -338,11 +338,11 @@ a:hover{
   /*---------- INDICATORS CONTROL ----------*/
   .ps_indicators_y .carousel-indicators{
     top: 0;
-    left: 3%;
+    right: 3%;
     width: 5%;
     bottom: 0;
     height: 25%;
-    right: auto;
+    left: auto;
     margin: auto;
     display: block;
     overflow: hidden;
@@ -356,6 +356,7 @@ a:hover{
     border-radius: 0px;
     -webkit-border-radius: 0px;
     border: 2px solid #ffffffb3;
+    border-radius: 50%;
   }
   .ps_indicators_y .carousel-indicators .active{
     margin: 1px;
@@ -691,7 +692,7 @@ a:hover{
     font-size: 22px;
     font-weight: bold;
 }
-
+/* 
 @media only screen and (min-width:992px){
     .features-box-pop-up{
         transform: scale(1.1);
@@ -701,7 +702,7 @@ a:hover{
     .features-box-pop-up .features-box-icon p{
       color: var(--white);
     }
-}
+} */
 
 
 /*======================================
@@ -832,10 +833,11 @@ a:hover{
  .how-it-works-box{
   padding: 25px 0px 40px 0px;
    border: 1px solid #f1f1f1;
-   transform: scale(1);
+   /* transform: scale(1); */
+   transition: .7s all ease;
    box-shadow: 0 0 12px 0 #cdcdcd;
 }
-.overlay{
+/* .overlay{
    position: absolute;
    padding: 0 50px;
    bottom: 0;
@@ -845,21 +847,24 @@ a:hover{
    transition: .5s all ease;
    -webkit-transition: .5s all ease;
    background-color: var(--blue);
-}
-.overlay-text{
+} */
+/* .overlay-text{
    color: var(--white);
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-}
-.how-it-works-box:hover .overlay{
+} */
+/* .how-it-works-box:hover .overlay{
    height: 100%;
-}
+} */
 .how-it-works-box-icon p{
   font-size: 50px;
   color: var(--blue);
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+.how-it-works-box:hover{
+  transform: scale(1.05);
 }
 
 
@@ -905,14 +910,14 @@ a:hover{
   margin-bottom: 10px;
 }
 
-.line_bro {
+/* .line_bro {
   background: var(--blue);
   height: 3px;
   width: 100px;
   text-align: center;
   display: block;
   margin: 0 auto 25px;
-}
+} */
 
 
 /*======================================
@@ -1109,6 +1114,11 @@ a:hover{
 
  #quote{
   padding: 100px 0 50px;
+  background: url(../images/main-banner/slider1.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .quote-form .form-group{
   padding: 0 6px;
@@ -1170,31 +1180,19 @@ a:hover{
 
 
 /*======================================
- ================ FAQ's CSS ============
- ======================================= */
-
-#faq .card-header{
-  background-color: white;
-}
-
-#faq .card{
-  border-radius: 0!important;
-  margin-bottom: 30px;
-  border-left: 3px solid  var(--blue);
-}
-
-
-/*======================================
  ============ Newsletter CSS ===========
  ======================================= */
 
+ .subscribe-box{
+   position: relative;
+ }
 .subscribe-box .form-control{
   height: 50px;
 }
-.subscribe-btn{
+.subscribe-btn button{
   position: absolute;
-  bottom: 0;
-  right: 15px;
+  bottom: 0px;
+  right: 0px;
 }
 
 
