@@ -54,7 +54,7 @@ $("#client-carousel").owlCarousel({
 	}
 	});
 
- $("#testimonial-slider").owlCarousel({      
+ $("#main-testimonial").owlCarousel({      
 	pagination : false,
 	loop:true,
 	//  dots:true,
