@@ -852,6 +852,16 @@ a:hover{
 .team-box:hover .team-textarea{
   bottom: 5px;
 }
+.team-box-img{
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.team-box:hover .team-box-img{
+  filter: brightness(50%);
+}
 
 /*======================================
  ============ Our Team CSS ===========
@@ -995,6 +1005,7 @@ a:hover{
 
  .facts {
   position: relative;
+  overflow: hidden;
   padding: 110px 0px 80px;
   background: url(../images/fact/fact.jpg);
   background-attachment: fixed;
@@ -1003,7 +1014,15 @@ a:hover{
   background-size: cover;
   width: 100%;
 }
-
+.facts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000065;
+}
 .facts .facts_inner {
   position: relative;
   text-align: center;
